@@ -44,6 +44,7 @@ console.log(makeLegend());
 - CREATE A NEW EMPTY ARRAY AND STORE IN VARIABLE CALLED vowelCelebs
 - MAKE A FOR LOOP TO ITERATE THROUGH CELEB ARRAY AND IF CELEB NAME STARTS WITH A VOWEL
 PUSH ONTO NEW vowelCelebs array variable.
+- Print vowelCelebs.
 */
 
 let vowelCelebs = [];
