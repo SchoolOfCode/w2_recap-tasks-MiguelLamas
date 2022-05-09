@@ -49,12 +49,7 @@ PUSH ONTO NEW vowelCelebs array variable.
 
 let vowelCelebs = [];
 for (let i = 0; i < celebs.length; i++) {
-  if (
-    celebs[i].charAt(0) === "A" ||
-    celebs[i].charAt(0) === "E" ||
-    celebs[i].charAt(0) === "I" ||
-    celebs[i].charAt(0) === "O" ||
-    celebs[i].charAt(0) === "U"
+  if (/[aeiouAEIOU]/.test(celebs[i].charAt(0))
   ) {
     vowelCelebs.push(celebs[i]);
   }
