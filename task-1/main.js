@@ -17,8 +17,8 @@ let celebs = [
 ('name') STRING AS SOLE ARGUMENT.
 
 /*
-function makeLegend(name) {
-  return `${name} is now a legend`;
+function makeLegend(str) {
+  return `${str} is now a legend`;
 }
 
 console.log(makeLegend('Chris')); */
@@ -30,14 +30,17 @@ console.log(makeLegend('Chris')); */
 - CONCATENATE CELEBS ON ARRAY AND NEW STRING AND PUSH INTO NEWLY CREATED legendaryCelebs ARRAY VARIABLE.
 
 */
-function makeLegend(name) {
-  let legendaryCelebs = [];
-  for (let i = 0; i < celebs.length; i++) {
-    legendaryCelebs.push(celebs[i] + " is now a legend");
-  }
-  return legendaryCelebs;
+
+function makeLegend(str) {
+  return `${str} is now a legend`;
 }
-console.log(makeLegend());
+
+let legendaryCelebs = [];
+for (let i = 0; i < celebs.length; i++) {
+  legendaryCelebs.push(makeLegend(celebs[i]));
+}
+
+console.log(legendaryCelebs);
 
 /*
 //TASK 1.3
@@ -48,12 +51,12 @@ PUSH ONTO NEW vowelCelebs array variable.
 */
 
 let vowelCelebs = [];
+
 for (let i = 0; i < celebs.length; i++) {
-  if (/[aeiouAEIOU]/.test(celebs[i].charAt(0))
-  ) {
+  const vowels = ["a", "e", "i", "o", "u"];
+  if (vowels.includes(celebs[i][0].toLowerCase())) {
     vowelCelebs.push(celebs[i]);
   }
-
 }
 
 console.log(vowelCelebs);
