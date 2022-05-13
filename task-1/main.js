@@ -30,8 +30,8 @@ let celebs = [
   "Emma Thompson",
 ];
 
-function makeLegend(str) {
-  return `${str} is now a legend.`;
+function makeLegend(name) {
+  return `${name} is now a legend.`;
 }
 
 let legendaryCelebs = [];

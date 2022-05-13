@@ -23,4 +23,4 @@ function incrementCount() {
   }
 };
 
-document.getElementById('count').textContent = "The counter starts now!";
+document.getElementById("count").textContent = "The counter starts now!";
