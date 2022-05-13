@@ -31,7 +31,7 @@ let celebs = [
 ];
 
 function makeLegend(str) {
-  return `${str} is now a legend`;
+  return `${str} is now a legend.`;
 }
 
 let legendaryCelebs = [];
