@@ -23,4 +23,4 @@ function incrementCount() {
   }
 };
 
-document.getElementById("count").textContent = 0;
+document.getElementById("count").toHaveTextContent;
