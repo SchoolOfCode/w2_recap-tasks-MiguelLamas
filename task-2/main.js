@@ -11,7 +11,7 @@ TASK 2.3
 - Use `textContent` to change the text in the `p` tag when it displays.
 */
 
-let count = 0;
+let counter = 0;
 let p = document.querySelector("#count");
 let myInterval = setInterval(incrementCount, 1000);
 
@@ -23,4 +23,4 @@ function incrementCount() {
   }
 };
 
-document.getElementById("count").toHaveTextContent;
+let count = document.getElementById("count").textContent;
