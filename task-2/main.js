@@ -11,14 +11,14 @@ TASK 2.3
 - Use `textContent` to change the text in the `p` tag when it displays.
 */
 
-let counter = 0;
+let counter = 1;
 let myIncrementation = setInterval(incrementCount, 1000);
 let para = document.querySelector("#count");
 
 function incrementCount() {
   para.textContent = counter;
   counter++;
-  if (counter == 12) {
+  if (counter == 13) {
     clearInterval(myIncrementation);
   }
 }
