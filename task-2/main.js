@@ -12,13 +12,13 @@ TASK 2.3
 */
 
 let counter = 0;
-let p = document.querySelector("#count");
 let myIncrementation = setInterval(incrementCount, 1000);
+let para = document.querySelector("#count");
 
 function incrementCount() {
-  p.textContent = counter;
-  count++;
-  if (count == 12) {
+  para.textContent = counter;
+  counter++;
+  if (counter == 12) {
     clearInterval(myIncrementation);
   }
 }
