@@ -22,5 +22,6 @@ async function getCatImage() {
 
 //console.log(getCatImage());
 
-
-document.querySelector("#new-cat-button").addEventListener("click", getCatImage);
+document
+  .querySelector("#new-cat-button")
+  .addEventListener("click", getCatImage);
