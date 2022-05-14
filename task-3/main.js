@@ -10,9 +10,7 @@ TASK 3.2
 */
 
 async function getCatImage() {
-  let response = await fetch("https://api.thecatapi.com/v1/images/search", {
-    headers: { accept: "application/json" },
-  });
+  let response = await fetch("https://api.thecatapi.com/v1/images/search");
   let data = await response.json();
   //console.log(data);
   let catImage = document.querySelector("#cat-here");
@@ -20,6 +18,7 @@ async function getCatImage() {
   //console.log(data[0].url)
 }
 
-//console.log(getCatImage());
 
-document.querySelector("#new-cat-button").addEventListener("click", getCatImage);
+let button = document.querySelector("#new-cat-button").addEventListener("click", getCatImage);
+
+getCatImage();
